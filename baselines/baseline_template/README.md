@@ -68,7 +68,7 @@ poetry install
 To run StatAvg with TON IoT baseline, first ensure you have activated your Poetry environment (execute `poetry shell` from this directory), then:
 
 ```bash
-python -m statavg.main # this will run using the default settings in the `conf/config.yaml`
+python -m statavg.main # this will run using the default settings in the `conf/base.yaml`
 
 # you can override settings directly from the command line
 python -m statavg.main num_rounds=20 # will set number of rounds to 20
