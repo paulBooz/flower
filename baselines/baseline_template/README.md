@@ -34,8 +34,10 @@ dataset: [TON_IoT] # list of datasets you include in your baseline. Do not use "
 
 **Dataset:** This baseline only includes the TON IoT dataset. By default, it will be partitioned into 5 clients following a stratified split based on th elabels. The settings are as follows:
 
-**Training Hyperparameters:** :warning: *_Include a table with all the main hyperparameters in your baseline. Please show them with their default value._*
-
+**Training Hyperparameters:** The following table shows the main hyperparameters for this baseline with their default value
+| Dataset | #classes | #partitions | partitioning method | partition settings |
+| :------ | :---: | :---: | :---: | :---: |
+| TON IoT | 6 | 5 | startified based on class | 6 classes per client |
 
 ## Environment Setup
 
