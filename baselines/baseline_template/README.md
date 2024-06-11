@@ -33,11 +33,20 @@ dataset: [TON_IoT] # list of datasets you include in your baseline. Do not use "
 **Model:** A simple MLP with three hidden layers.
 
 **Dataset:** This baseline only includes the TON IoT dataset. By default, it will be partitioned into 5 clients following a stratified split based on th elabels. The settings are as follows:
-
-**Training Hyperparameters:** The following table shows the main hyperparameters for this baseline with their default value
 | Dataset | #classes | #partitions | partitioning method | partition settings |
 | :------ | :---: | :---: | :---: | :---: |
-| TON IoT | 6 | 5 | startified based on class | 6 classes per client |
+| TON IoT | 6 | 5 | stratified based on class | 6 classes per client |
+
+**Training Hyperparameters:** The following table shows the main hyperparameters for this baseline with their default value
+| Description | Default Value |
+| ----------- | ----- |
+| total clients | 5 |
+| clients per round | 5 |
+| number of rounds | 50 |
+| client resources | {'num_cpus': 3.0, 'num_gpus': 0.0 }|
+| data partition | stratified based on class (6 classes per client) |
+| optimizer | Adam |
+
 
 ## Environment Setup
 
