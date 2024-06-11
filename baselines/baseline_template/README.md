@@ -73,24 +73,7 @@ python -m statavg.main # this will run using the default settings in the `conf/c
 # you can override settings directly from the command line
 python -m statavg.main num_rounds=20 # will set number of rounds to 20
 
-# if you run this baseline with a larger model, you might want to use the GPU (not used by default).
-# you can enable this by overriding the `server_device` and `client_resources` config. For example
-# the below will run the server model on the GPU and 4 clients will be allowed to run concurrently on a GPU (assuming you also meet the CPU criteria for clients)
-python -m fedprox.main server_device=cuda client_resources.num_gpus=0.25
-```
-
-To run using FedAvg:
-```bash
-# this will use a variation of FedAvg that drops the clients that were flagged as stragglers
-# This is done so to match the experimental setup in the FedProx paper
-python -m fedprox.main --config-name fedavg
-
-# this config can also be overridden from the CLI
-```
-```
-
-
-## Expected Results
+### Expected Results
 
 :warning: _Your baseline implementation should replicate several of the experiments in the original paper. Please include here the exact command(s) needed to run each of those experiments followed by a figure (e.g. a line plot) or table showing the results you obtained when you ran the code. Below is an example of how you can present this. Please add command followed by results for all your experiments._
 
