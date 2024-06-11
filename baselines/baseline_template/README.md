@@ -5,13 +5,7 @@ labels: [label1, label2] # please add between 4 and 10 single-word (maybe two-wo
 dataset: [TON_IoT] # list of datasets you include in your baseline. Do not use ""
 ---
 
-# :warning: *_Title of your baseline_*
-
-> Note: If you use this baseline in your work, please remember to cite the original authors of the paper as well as the Flower paper.
-
-> :warning: This is the template to follow when creating a new Flower Baseline. Please follow the instructions in `EXTENDED_README.md`
-
-> :warning: Please follow the instructions carefully. You can see the [FedProx-MNIST baseline](https://github.com/adap/flower/tree/main/baselines/fedprox) as an example of a baseline that followed this guide.
+# StatAvg: Mitigating Data Heterogeneity in Federated Learning for Intrusion Detection Systems
 
 > :warning: Please complete the metadata section at the very top of this README. This generates a table at the top of the file that will facilitate indexing baselines.
 
