@@ -7,9 +7,8 @@ dataset: [TON_IoT] # list of datasets you include in your baseline. Do not use "
 
 # StatAvg: Mitigating Data Heterogeneity in Federated Learning for Intrusion Detection Systems
 
-> :warning: Please complete the metadata section at the very top of this README. This generates a table at the top of the file that will facilitate indexing baselines.
 
-**Paper:** :warning: *_add the URL of the paper page (not to the .pdf). For instance if you link a paper on ArXiv, add here the URL to the abstract page (e.g. https://arxiv.org/abs/1512.03385). If your paper is in from a journal or conference proceedings, please follow the same logic._*
+**Paper:** https://arxiv.org/abs/2405.13062
 
 **Authors:** :warning: *_list authors of the paper_*
 
