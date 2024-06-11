@@ -21,7 +21,7 @@ dataset: [TON_IoT] # list of datasets you include in your baseline. Do not use "
 
 **Datasets:** TON IoT dataset (linux memory logs). Online at https://research.unsw.edu.au/projects/toniot-datasets
 
-**Hardware Setup:**  These experiments were run on a desktop machine with 16 CPU threads. Any machine with 4 CPU cores or more would be able to run it in a reasonable amount of time
+**Hardware Setup:**  These experiments were run on a desktop machine with 16 CPU threads. Any machine with 4 CPU cores or more would be able to run it in a reasonable amount of time.
 
 **Contributors:** TBD
 
