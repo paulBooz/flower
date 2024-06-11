@@ -72,8 +72,9 @@ python -m statavg.main # this will run using the default settings in the `conf/c
 
 # you can override settings directly from the command line
 python -m statavg.main num_rounds=20 # will set number of rounds to 20
+```
 
-### Expected Results
+## Expected Results
 
 :warning: _Your baseline implementation should replicate several of the experiments in the original paper. Please include here the exact command(s) needed to run each of those experiments followed by a figure (e.g. a line plot) or table showing the results you obtained when you ran the code. Below is an example of how you can present this. Please add command followed by results for all your experiments._
 
