@@ -1,6 +1,6 @@
 ---
-title: title of the paper
-url: URL to the paper page (not the pdf)
+title: StatAvg: Mitigating Data Heterogeneity in Federated Learning for Intrusion Detection Systems
+url: [URL to the paper page (not the pdf)](https://arxiv.org/abs/2405.13062)
 labels: [label1, label2] # please add between 4 and 10 single-word (maybe two-words) labels (e.g. system heterogeneity, image classification, asynchronous, weight sharing, cross-silo). Do not use ""
 dataset: [dataset1, dataset2] # list of datasets you include in your baseline. Do not use ""
 ---
