@@ -1,7 +1,7 @@
 ---
 title: StatAvg - Mitigating Data Heterogeneity in Federated Learning for Intrusion Detection Systems
 url: https://arxiv.org/abs/2405.13062
-labels: [intrusion detection system, non-iid data] # please add between 4 and 10 single-word (maybe two-words) labels (e.g. system heterogeneity, image classification, asynchronous, weight sharing, cross-silo). Do not use ""
+labels: [intrusion detection system, non-iid data, statistical averaging] # please add between 4 and 10 single-word (maybe two-words) labels (e.g. system heterogeneity, image classification, asynchronous, weight sharing, cross-silo). Do not use ""
 dataset: [TON_IoT] # list of datasets you include in your baseline. Do not use ""
 ---
 
