@@ -54,10 +54,10 @@ To construct the Python environment, simply run:
 
 ```bash
 # Set directory to use python 3.10 (install with `pyenv install <version>` if you don't have it)
-pyenv local 3.10.12
+pyenv local 3.10.13
 
 # Tell poetry to use python3.10
-poetry env use 3.10.12
+poetry env use 3.10.13
 
 # Install
 poetry install
@@ -65,23 +65,28 @@ poetry install
 
 ## Running the Experiments
 
-:warning: _Provide instructions on the steps to follow to run all the experiments._
-```bash  
-# The main experiment implemented in your baseline using default hyperparameters (that should be setup in the Hydra configs) should run (including dataset download and necessary partitioning) by executing the command:
+To run StatAvg with TON IoT baseline, first ensure you have activated your Poetry environment (execute `poetry shell` from this directory), then:
 
-poetry run python -m <baseline-name>.main <no additional arguments> # where <baseline-name> is the name of this directory and that of the only sub-directory in this directory (i.e. where all your source code is)
+```bash
+python -m statavg.main # this will run using the default settings in the `conf/config.yaml`
 
-# If you are using a dataset that requires a complicated download (i.e. not using one natively supported by TF/PyTorch) + preprocessing logic, you might want to tell people to run one script first that will do all that. Please ensure the download + preprocessing can be configured to suit (at least!) a different download directory (and use as default the current directory). The expected command to run to do this is:
+# you can override settings directly from the command line
+python -m statavg.main num_rounds=20 # will set number of rounds to 20
 
-poetry run python -m <baseline-name>.dataset_preparation <optional arguments, but default should always run>
+# if you run this baseline with a larger model, you might want to use the GPU (not used by default).
+# you can enable this by overriding the `server_device` and `client_resources` config. For example
+# the below will run the server model on the GPU and 4 clients will be allowed to run concurrently on a GPU (assuming you also meet the CPU criteria for clients)
+python -m fedprox.main server_device=cuda client_resources.num_gpus=0.25
+```
 
-# It is expected that you baseline supports more than one dataset and different FL settings (e.g. different number of clients, dataset partitioning methods, etc). Please provide a list of commands showing how these experiments are run. Include also a short explanation of what each one does. Here it is expected you'll be using the Hydra syntax to override the default config.
+To run using FedAvg:
+```bash
+# this will use a variation of FedAvg that drops the clients that were flagged as stragglers
+# This is done so to match the experimental setup in the FedProx paper
+python -m fedprox.main --config-name fedavg
 
-poetry run python -m <baseline-name>.main  <override_some_hyperparameters>
-.
-.
-.
-poetry run python -m <baseline-name>.main  <override_some_hyperparameters>
+# this config can also be overridden from the CLI
+```
 ```
 
 
