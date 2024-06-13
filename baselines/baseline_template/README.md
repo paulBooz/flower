@@ -45,7 +45,7 @@ dataset: [TON_IoT] # list of datasets you include in your baseline. Do not use "
 | number of rounds | 50 |
 | local epochs | 2 |
 | client resources | {'num_cpus': 3.0, 'num_gpus': 0.0 }|
-| data partition | stratified based on class (6 classes per client) |
+| data partition | stratified based on labels (6 classes per client) |
 | optimizer | Adam |
 
 
