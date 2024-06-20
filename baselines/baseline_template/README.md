@@ -77,7 +77,12 @@ python -m statavg.main num_rounds=20 # will set number of rounds to 20
 
 ## Expected Results
 
-In the paper, server-side evaluation is not implemented, as it is considered that the server does not own any data. However, one can enable server-side evaluation by executing
+To reproduce the results of the paper (Fig. 3., StatAvg), simply run:
+
+```bash
+ python -m statavg.main   #default settings
+
+In the paper, server-side evaluation is not implemented, as it is considered that the server does not own any data. However, one can enable server-side evaluation by executing:
 
 ```bash
 # enable server-side evaluation with the data ratio of your preference. Default seetings do not include this option.
