@@ -77,15 +77,10 @@ python -m statavg.main num_rounds=20 # will set number of rounds to 20
 
 ## Expected Results
 
-:warning: _Your baseline implementation should replicate several of the experiments in the original paper. Please include here the exact command(s) needed to run each of those experiments followed by a figure (e.g. a line plot) or table showing the results you obtained when you ran the code. Below is an example of how you can present this. Please add command followed by results for all your experiments._
+In the paper, server-side evaluation is not implemented, as it is considered that the server does not own any data. However, one can enable server-side evaluation by executing
 
 ```bash
-# it is likely that for one experiment you need to sweep over different hyperparameters. You are encouraged to use Hydra's multirun functionality for this. This is an example of how you could achieve this for some typical FL hyperparameteres
+# enable server-side evaluation with the data ratio of your preference. Default seetings do not include this option.
+ python -m statavg.main include_testset.flag=true include_testset.flag include_testset.ratio=0.15
 
-poetry run python -m <baseline-name>.main --multirun num_client_per_round=5,10,50 dataset=femnist,cifar10
-# the above command will run a total of 6 individual experiments (because 3client_configs x 2datasets = 6 -- you can think of it as a grid).
-
-[Now show a figure/table displaying the results of the above command]
-
-# add more commands + plots for additional experiments.
 ```
