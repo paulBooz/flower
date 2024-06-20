@@ -87,5 +87,5 @@ In the paper, server-side evaluation is not implemented, as it is considered tha
 
 ```bash
 # enable server-side evaluation with the data ratio of your preference. Default seetings do not include this option.
- python -m statavg.main include_testset.flag=true include_testset.ratio=0.15
+python -m statavg.main include_testset.flag=true include_testset.ratio=0.15
 ```
