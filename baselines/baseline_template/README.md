@@ -28,7 +28,7 @@ dataset: [TON_IoT] # list of datasets you include in your baseline. Do not use "
 
 ## Experimental Setup
 
-**Task:** Classification of cyberattacks
+**Task:** Classification of cyberattacks.
 
 **Model:** A simple MLP with three hidden layers.
 
@@ -37,7 +37,7 @@ dataset: [TON_IoT] # list of datasets you include in your baseline. Do not use "
 | :------ | :---: | :---: | :---: | :---: |
 | TON IoT | 6 | 5 | stratified based on labels | 6 classes per client |
 
-**Training Hyperparameters:** The following table shows the main hyperparameters for this baseline with their default value
+**Training Hyperparameters:** The following table shows the main hyperparameters for this baseline with their default value.
 | Description | Default Value |
 | ----------- | ----- |
 | total clients | 5 |
