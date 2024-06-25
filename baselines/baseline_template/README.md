@@ -65,7 +65,7 @@ poetry install
 ```
 
 ## Running the Experiments
-Firstly, ensure that the dataset is located at `dataset/dataset.csv`. Ensure your dataset is located at dataset/dataset.csv. If you want to run the experiments with your own data, place your dataset in this path.
+Firstly, ensure that the dataset is located at `dataset/dataset.csv`. If you want to run the experiments with your own data, place your dataset in this path.
 To run StatAvg with TON IoT baseline, ensure you have activated your Poetry environment (execute `poetry shell` from this directory), then:
 
 ```bash
