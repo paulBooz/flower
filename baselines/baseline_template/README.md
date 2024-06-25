@@ -82,6 +82,8 @@ To reproduce the results of the paper (Fig. 3., StatAvg), simply run:
 ```bash
 python -m statavg.main   # default settings
 ```
+| *Testing Accuracy vs Rounds for StatAvg* |
+|:--:|
 ![](_static/fig_statavg.png)
 
 In the paper, server-side evaluation is not implemented, as it is considered that the server does not own any data. However, it can be enabled by executing:
