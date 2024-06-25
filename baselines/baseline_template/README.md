@@ -74,7 +74,7 @@ python -m statavg.main # this will run using the default settings in the `conf/b
 # you can override settings directly from the command line
 python -m statavg.main num_rounds=20 # will set number of rounds to 20
 ```
-Note that, an auxiliary directory is created in the runtime to persist client state, which includes the data scalers/normalizers of each client. By default, this directory is deleted upon the termination of the execution. To prevent automatic deletion (in this case, it is recommended to manually delete the directory from previous runs), execute the following:
+It is noted that an auxiliary directory is created in the runtime to persist client state, which includes the data scalers/normalizers of each client. By default, this directory is deleted upon the termination of the execution. To prevent automatic deletion (in this case, it is recommended to manually delete the directory from previous runs), execute the following:
 ```bash
 # disable automated removal of the auxiliary directory of scalers
 python -m statavg.main delete_scaler_dir=False
