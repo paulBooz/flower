@@ -83,7 +83,7 @@ To reproduce the results of the paper (Fig. 3., StatAvg), simply run:
 python -m statavg.main   # default settings
 ```
 
-In the paper, server-side evaluation is not implemented, as it is considered that the server does not own any data. However, one can enable server-side evaluation by executing:
+In the paper, server-side evaluation is not implemented, as it is considered that the server does not own any data. However, it can be enabled by executing:
 
 ```bash
 # enable server-side evaluation with the data ratio of your preference. Default settings do not include this option.
