@@ -65,8 +65,8 @@ poetry install
 ```
 
 ## Running the Experiments
-
-To run StatAvg with TON IoT baseline, first ensure you have activated your Poetry environment (execute `poetry shell` from this directory), then:
+Firstly, ensure that the dataset directory is , where the dataset .csv file is located.
+To run StatAvg with TON IoT baseline, ensure you have activated your Poetry environment (execute `poetry shell` from this directory), then:
 
 ```bash
 python -m statavg.main # this will run using the default settings in the `conf/base.yaml`
