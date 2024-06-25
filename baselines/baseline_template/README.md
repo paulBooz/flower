@@ -82,6 +82,7 @@ To reproduce the results of the paper (Fig. 3., StatAvg), simply run:
 ```bash
 python -m statavg.main   # default settings
 ```
+The expected results should look similar to the following figure:
 | Testing Accuracy vs Rounds for StatAvg |
 |:--:|
 ![](_static/fig_statavg.png)
