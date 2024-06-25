@@ -42,7 +42,7 @@ dataset: [TON_IoT] # list of datasets you include in your baseline. Do not use "
 | ----------- | ----- |
 | total clients | 5 |
 | clients per round | 5 |
-| number of rounds | 50 |
+| number of rounds | 40 |
 | local epochs | 2 |
 | client resources | {'num_cpus': 3.0, 'num_gpus': 0.0 }|
 | data partition | stratified based on labels (6 classes per client) |
