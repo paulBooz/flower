@@ -68,7 +68,7 @@ poetry install
 
 
 ## Running the Experiments
-Firstly, ensure that the dataset is located at `dataset/dataset.csv`. If you want to run the experiments with your own data, place your dataset in this path. Preprocessing of the dataset is done via `dataset_preparation.py`. Modify the latter module if want to add custom preprocessing.
+Firstly, ensure that the dataset is located at `dataset/dataset.csv`. If you want to run the experiments with your own data, place your dataset in this path. The dataset is preprocessed using `dataset_preparation.py`, which you can modify if you wish to add custom preprocessing steps.
 To run StatAvg with TON IoT baseline, ensure you have activated your Poetry environment (execute `poetry shell` from this directory), then:
 
 ```bash
@@ -103,3 +103,4 @@ In the paper, server-side evaluation is not implemented, as it is considered tha
 # enable server-side evaluation with the data ratio of your preference. Default settings do not include this option.
 python -m statavg.main include_testset.flag=true include_testset.ratio=0.15
 ```
+
