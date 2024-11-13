@@ -1,8 +1,8 @@
 ---
 title: StatAvg - Mitigating Data Heterogeneity in Federated Learning for Intrusion Detection Systems
 url: https://arxiv.org/abs/2405.13062
-labels: [intrusion detection system, non-iid data, statistical averaging] # please add between 4 and 10 single-word (maybe two-words) labels (e.g. system heterogeneity, image classification, asynchronous, weight sharing, cross-silo). Do not use ""
-dataset: [TON_IoT] # list of datasets you include in your baseline. Do not use ""
+labels: [intrusion detection system, non-iid data, statistical averaging]
+dataset: [TON_IoT]
 ---
 
 # StatAvg: Mitigating Data Heterogeneity in Federated Learning for Intrusion Detection Systems
@@ -44,7 +44,7 @@ dataset: [TON_IoT] # list of datasets you include in your baseline. Do not use "
 | clients per round | 5 |
 | number of rounds | 40 |
 | local epochs | 2 |
-| client resources | {'num_cpus': 3.0, 'num_gpus': 0.0 }|
+| client resources | {'num_cpus': 2.0, 'num_gpus': 0.0 }|
 | data partition | stratified based on labels (6 classes per client) |
 | optimizer | Adam |
 
@@ -64,8 +64,11 @@ poetry env use 3.10.13
 poetry install
 ```
 
+## Dataset 
+
+
 ## Running the Experiments
-Firstly, ensure that the dataset is located at `dataset/dataset.csv`. If you want to run the experiments with your own data, place your dataset in this path.
+Firstly, ensure that the dataset is located at `dataset/dataset.csv`. If you want to run the experiments with your own data, place your dataset in this path. Preprocessing of the dataset is done via `dataset_preparation.py`. Modify the latter module if want to add custom preprocessing.
 To run StatAvg with TON IoT baseline, ensure you have activated your Poetry environment (execute `poetry shell` from this directory), then:
 
 ```bash
@@ -93,6 +96,7 @@ The expected results should look similar to the following figure:
   <img src="_static/fig_statavg.png" alt="StatAvg Figure"/>
 </p>
 
+It is noted that the results are saved into a pickle file in the directory `outputs/`, which will be automatically created when the experiments are run.
 In the paper, server-side evaluation is not implemented, as it is considered that the server does not own any data. However, it can be enabled by executing:
 
 ```bash
