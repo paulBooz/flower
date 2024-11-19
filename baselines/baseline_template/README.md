@@ -1,7 +1,7 @@
 ---
 title: StatAvg - Mitigating Data Heterogeneity in Federated Learning for Intrusion Detection Systems
 url: https://arxiv.org/abs/2405.13062
-labels: [intrusion detection system, non-iid data, statistical averaging]
+labels: [intrusion detection, non-iid data, statistical averaging]
 dataset: [TON_IoT]
 ---
 
