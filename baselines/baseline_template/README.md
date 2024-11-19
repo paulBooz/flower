@@ -64,7 +64,7 @@ poetry env use 3.10.13
 poetry install
 ```
 
-## Dataset 
+## Dataset Preparation
 You can download the TON_IoT dataset by accessing the following [link](https://unsw-my.sharepoint.com/personal/z5025758_ad_unsw_edu_au/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fz5025758%5Fad%5Funsw%5Fedu%5Fau%2FDocuments%2FTON%5FIoT%20datasets%2FTrain%5FTest%5Fdatasets%2FTrain%5FTest%5FLinux%5Fdataset). Please download the file named `Train_test_linux_memory.csv`. Then, ensure that the dataset is located at `dataset/dataset.csv`. If you want to run the experiments with your own data, place your dataset in this path. The dataset is preprocessed using `dataset_preparation.py`, which you can modify if you wish to add custom preprocessing steps.
 
 ## Running the Experiments
