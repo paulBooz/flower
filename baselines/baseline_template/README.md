@@ -23,7 +23,7 @@ dataset: [TON_IoT]
 
 **Hardware Setup:**  These experiments were run on a desktop machine with 16 CPU threads. Any machine with 4 CPU cores or more would be able to run it in a reasonable amount of time.
 
-**Contributors:** TBD
+**Contributors:** Pavlos Bouzinis (Metamind Innovations)
 
 
 ## Experimental Setup
