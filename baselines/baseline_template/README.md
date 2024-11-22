@@ -57,7 +57,7 @@ To construct the Python environment, simply run:
 # Set directory to use python 3.10 (install with `pyenv install <version>` if you don't have it)
 pyenv local 3.10.13
 
-# Tell poetry to use python3.10
+# Tell poetry to use python 3.10
 poetry env use 3.10.13
 
 # Install
