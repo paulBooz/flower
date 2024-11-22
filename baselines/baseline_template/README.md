@@ -89,6 +89,12 @@ To reproduce the results of the paper (Fig. 3., StatAvg), simply run:
 ```bash
 python -m statavg.main   # default settings
 ```
+You can also reproduce the results with FedAvg as a baseline by running:
+
+```bash
+python -m statavg.main --config-name fedavg    # run with FedAvg
+```
+
 The expected results should look similar to the following figure:
 <p align="center">
   <b>Testing Accuracy vs Rounds for StatAvg</b><br>
