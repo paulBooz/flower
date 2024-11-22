@@ -98,7 +98,7 @@ python -m statavg.main --config-name fedavg    # run with FedAvg
 The expected results should look similar to the following figure:
 <p align="center">
   <b>Testing Accuracy vs Rounds for StatAvg</b><br>
-  <img src="_static/fig_statavg.png" alt="StatAvg Figure"/>
+  <img src="_static/fig.png" alt="StatAvg Figure"/>
 </p>
 
 It is noted that the results are saved into a pickle file in the directory `outputs/`, which will be automatically created when the experiments are run.
